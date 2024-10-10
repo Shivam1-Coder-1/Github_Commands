@@ -1,0 +1,66 @@
+# Commands to copy your repository to your local editor
+git clone <"link of your repository">
+
+# Command to display status
+git status
+
+# Command to enter into an folder(directory)
+cd <"folder name">
+
+# Command to see all files(hidden + visible)
+ls -a
+
+# Command to add a new file and commit changes
+git add<-file name->
+git commit  -m"some message"
+git add . (add all file)
+
+# Command to push our local work(file) to Github 
+git push origin main
+
+# Init Command - used to create a new repository
+
+mkdir <-Repo name->
+cd Repo name
+git init
+git remote add origin <-link->
+git remote -v (to verify remote)
+git branch (to check branch)
+git branch -M <-name of branch-(main)> (to rename branch)
+git push origin main (also if we are working on long project than we havae to simply write (git push-u origin main) only for 1 time after which for every change just write (git push))
+
+""" WORKFLOW """
+# Local git
+
+github Repo
+clone it
+changes 
+add
+commit
+push
+
+# Git Branches
+
+Branches are used to add features (i.e one branch is working on features and other on main project)
+
+git branch
+
+git branch -M main
+
+git checkout <-branch name->   (to navigate)
+
+git checkout -b <-new branch name-> (to create new branch)
+
+git branch -d <-branch name-> (to delete branch)
+ 
+# Merging code
+
+way 1
+
+git diff <-branch name-> (to compare commits, branches , files and more) 
+
+git merge <-branch name->
+
+way 2
+
+Create a PR {PULL Request --> it lets you tell others about changes you've pushed to a branch in a repository on github.}
