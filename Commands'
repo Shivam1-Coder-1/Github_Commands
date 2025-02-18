@@ -8,7 +8,8 @@ git status
 cd <"folder name">
 
 # Command to see all files(hidden + visible)
-ls -a
+ls -a # for linus/mac
+dir /a # for windows
 
 # Command to add a new file and commit changes
 git add<-file name->
